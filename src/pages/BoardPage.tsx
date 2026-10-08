@@ -1,10 +1,11 @@
-import { Heading, Text, Stack } from '@chakra-ui/react'
+import { Stack } from '@chakra-ui/react'
+import { Board } from '../board'
+import board from '../../data/board.json'
 
 export function BoardPage() {
   return (
-    <Stack gap={4}>
-      <Heading as="h1">Tableau à venir</Heading>
-      <Text>Le tableau du Mini-Trello sera construit au Sprint 1.</Text>
+    <Stack gap={4} width="100%">
+      <Board board={board} />
     </Stack>
   )
 }
